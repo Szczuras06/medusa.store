@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "medusa.store",
+			"path": "."
+		},
+		{
+			"name": "drugs",
+			"path": "../../../../OneDrive - Vyssi odborna skola obalove techniky a Stredni skola, Steti/Skimo Projekt/drugs"
+		},
+		{
+			"name": "guns",
+			"path": "../../../../OneDrive - Vyssi odborna skola obalove techniky a Stredni skola, Steti/Skimo Projekt/guns"
+		},
+		{
+			"name": "services",
+			"path": "../../../../OneDrive - Vyssi odborna skola obalove techniky a Stredni skola, Steti/Skimo Projekt/services"
+		}
+	],
+	"settings": {}
+}

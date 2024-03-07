@@ -1,0 +1,495 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins-Bold", sans-serif;
+  background: linear-gradient(to right, #00060C, hsl(265, 67%, 8%));
+  
+}
+
+
+.header {
+  width: 100%;
+  height: 110px;
+  background-color:    #00060C;
+  position: relative;
+}
+
+.powered-by {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  height: 15px;
+  line-height: 110px;
+  margin: 0;
+  color: grey;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.underheader {
+  width: 100%;
+  height: 1px;
+  background-color: #515362;
+}
+
+.successful-deals {
+  width: 100%;
+  height: 70px;
+  background-color: #00060C;
+  position: relative;
+}
+
+.deals-text {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  height: 15px;
+  line-height: 70px;
+  margin: 0;
+  color: grey;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+
+.email-text {
+  position: absolute;
+  left: 45%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  line-height: 70px;
+  margin: 0;
+  color: grey;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  animation: fadeIn 2.5s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(5px); 
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.nav-buttons {
+  width: 150px;
+  display: flex;
+}
+
+.category-selection {
+  margin: auto;
+  color: whitesmoke;
+  display: flex;
+  border-radius: 50px;
+  width: 90%;
+  max-width: 2000px; 
+  padding: 5px;
+  justify-content: center;
+}
+
+.category-option {
+  cursor: pointer;
+  margin: 15px;
+  margin-left: 50px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    #3750de,
+    #3750de 50%,
+    whitesmoke 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease-in-out;
+  font-size: bold;
+}
+
+.category-option:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+  font-size: bold;
+}
+
+.category-option:hover {
+ background-position: 0;
+}
+
+.category-option:hover::before {
+  width:100%;
+}
+
+.category-text {
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.category-space {
+  width: 250px;
+}
+
+.select-box {
+  appearance: none;
+  width: 100%;
+  color: white;
+  background-color: #5500C2;
+  font-size: 15px;
+  margin: auto;
+  color: white;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.slogan {
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.medusa-store {
+  color: whitesmoke;
+  font-size: 15px;
+  text-align: center;
+  margin: 100px auto;
+  padding: 10px;
+  background: linear-gradient(to left, #7b62ff, #5e43e6);
+  border-radius: 20px;
+  width: 130px;
+}
+
+.product-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 28px;
+  border: 1px solid #515362;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #131522;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product {
+  width: calc(33.33% - 60px);
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #515362;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.zvetseno {
+  transform: scale(1.1); 
+}
+
+@media (max-width: 900px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .product {
+    width: calc(100% - 20px);
+  }
+}
+
+
+.product img {
+  max-width: 35%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.product-description {
+  margin-top: 10px;
+}
+
+.product p {
+  color: white;
+}
+
+.Bestseller-label {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 12px;
+  display: inline-block;
+  background-color: #1ba769;
+  padding: 8.5px;
+  border-radius: 85px;
+  font-size: 15px;
+  float: right;
+}
+
+.outofstock-label{
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 12px;
+  display: inline-block;
+  background-color: red;
+  padding: 8.5px;
+  border-radius: 85px;
+  font-size: 15px;
+  float: right;
+}
+
+
+.cart-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.cart-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.cart {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #131522;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.cart-total {
+  margin-top: 10px;
+  margin-right: 300px;
+  margin-top:10px ;
+
+}
+
+
+.add-to-cart {
+  background-color: #3750de;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+#cart-total {
+    display: inline-block;
+}
+
+.header2 {
+  width: 100%;
+  height: 270px;
+  background-color: #131522;
+  position: relative;
+}
+
+.dolnitext2 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  height: 15px;
+  line-height: 100px;
+  margin: 0;
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.dolnitext {
+  position: absolute;
+  left: 10%;
+  top: 28%;
+  height: 15px;
+  line-height: 100px;
+  margin: 0;
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.dolnitext3 {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  height: 15px;
+  line-height: 100px;
+  margin: 0;
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.dolnilogo {
+
+  position: absolute;
+  text-align: center;
+  left: 11%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  }
+  
+  .dolnitext4 {
+    position: absolute;
+    left: 10%;
+    top: 42%;
+    height: 15px;
+    line-height: 100px;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.2px;
+  }
+
+  .complete-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#complete-form {
+    margin-top: 15px;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 225px;
+  height: 125px;
+  background-color: #131522;
+  border: 2px solid #515362;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+
+.notification h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.notification p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.ooc {
+  position: absolute;
+  left: 35%;
+  top: 62%;
+  height: 15px;
+  line-height: 100px;
+  margin: 0;
+  color: grey;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+
+.stock {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 225px;
+  height: 125px;
+  background-color: #131522;
+  border: 2px solid #515362;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+
+.stock h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.stock p {
+  font-size: 14px;
+  text-align: center;
+}

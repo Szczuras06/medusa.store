@@ -1,3 +1,4 @@
+// celá stránka je napsaná přes uživatele "davis2115"
 // PRODUKTY !!!
 const products = [
     { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '475.000 Kč',  image: 'guns/hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
@@ -174,7 +175,7 @@ function submitForm() {
     document.getElementById('delivery').value = '';
     document.getElementById('complete-form').style.display = 'none';
 
-    const cartMessage = `**Anonmail:** ${email}\n**Number:** ${number}\n**Delivery Option:** ${delivery}\n**Order Number:** ${orderNumber}\n\n**Cart Items:**\n${getCartProducts()}`;
+    const cartMessage = `**LemonGate nick:** ${nick} \n**Anonmail:** ${email}\n**Number:** ${number}\n**Delivery Option:** ${delivery}\n**Order Number:** ${orderNumber}\n\n**Cart Items:**\n${getCartProducts()}`;
 
     const embed = {
         title: 'New Purchase',

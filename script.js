@@ -1,17 +1,17 @@
 // celá stránka je napsaná přes uživatele "davis2115"
 // PRODUKTY !!!
 const products = [
-    { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '475.000 Kč',  image: 'guns/hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
-    { productId: "glock17", title: 'Glock-17', category: 'weapons', price: '160.000 Kč',  image: 'guns/glock.png', status: 'Bestseller', show:"yes", },
-    { productId: "ak47",title: 'AK47', category: 'weapons', price: '475.000 Kč', image: 'guns/ak47.png', status: 'Bestseller',show:"yes" },
-    { productId: "vrazda",title: 'Vražda', category: 'services', price: '3.500.000 Kč',  image: 'image7.jpg', status: 'Bestseller',show:"no" },
-    { productId: "unos",title: 'Únos', category: 'services', price: '1.000.00 Kč',  image: 'services/unos.jpg',show:"no" },
-    { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '395.000Kč', image: 'guns/mosin.png',show:"yes"  },
-    { productId: "kacpdw",title: 'KAC PDW', category: 'weapons', price: '395.000 Kč',  image: 'guns/Hekler.png',show:"yes",},
-    { productId: "krissvector",title: 'KRISS Vector', category: 'weapons', price: '300.000Kč', image: 'guns/Smg.png',show:"yes"  },
-    { productId: "mosinnagantm1891",title: 'Mosin Nagant M1891', category: 'weapons', price: '525.000Kč',  image: 'guns/Sniper.png',show:"yes"  },
-    { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '1.250.000Kč', image: 'guns/Sniper.png',show:"yes"  },
-    { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '150.000 Kč',  image: 'guns/glock.png' ,show:"yes" },
+    { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '55 NC',  image: 'guns/hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
+    { productId: "glock17", title: 'Glock-17', category: 'weapons', price: '22 NC',  image: 'guns/glock.png', status: 'Bestseller', show:"yes", },
+    { productId: "ak47",title: 'AK47', category: 'weapons', price: '55 NC', image: 'guns/ak47.png', status: 'Bestseller',show:"yes" },
+    { productId: "vrazda",title: 'Vražda', category: 'services', price: 'XXX',  image: 'image7.jpg', status: 'Bestseller',show:"no" },
+    { productId: "unos",title: 'Únos', category: 'services', price: 'XXX',  image: 'services/unos.jpg',show:"no" },
+    { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '45 NC', image: 'guns/mosin.png',show:"yes"  },
+    { productId: "kacpdw",title: 'KAC PDW', category: 'weapons', price: '50 NC',  image: 'guns/Hekler.png',show:"yes",},
+    { productId: "krissvector",title: 'KRISS Vector', category: 'weapons', price: '40NC', image: 'guns/Smg.png',show:"yes"  },
+    { productId: "mosinnagantm1891",title: 'Mosin Nagant M1891', category: 'weapons', price: '50 NC',  image: 'guns/Sniper.png',show:"yes"  },
+    { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '125 NC', image: 'guns/Sniper.png',show:"yes"  },
+    { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '22.5 NC',  image: 'guns/glock.png' ,show:"yes" },
     { productId: "kokain",title: 'Kokain', category: 'drugs', price: 'XXX',  image: 'drugs/kokain.jpg',show:"yes",stock:"outofstock"  },
     { productId: "pcp",title: 'PCP', category: 'drugs', price: 'XXX',  image: 'drugs/pcp.jpg',show:"yes",stock:"outofstock"  },
     { productId: "xanax",title: 'Xanax', category: 'drugs', price: 'XXX',  image: 'drugs/xanax.jpg',show:"yes",stock:"outofstock"  },
@@ -26,15 +26,15 @@ const products = [
     { productId: "services",title: 'SERVICES', category: 'services', price: '$120', image: 'image8.jpg',show:"no",stock:"outofstock" },
     { productId: "services",title: 'SERVICES', category: 'services', price: '$90', image: 'image9.jpg',show:"no",stock:"outofstock" },
     { productId: "rp",title: 'NEDOSTUPNÉ', category: 'documents', price: '$0', image: 'image9.jpg',show:"no" },
-    { productId: "ammo.hk416d", title: "Zásobník do HK416D", category:"ammo", price:"XXX", image:"", show:"yes", stock:"yes"},
-    { productId: "ammo.glock17", title: "Zásobník do Glock 17", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.ak47", title: "Zásobník do AK47", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.remington870ae", title: "Zásobník do Remington 870AE", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.kacpdw", title: "Zásobník do KacPDW", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.remingtonm700", title: "Zásobník do Remington M700", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.mosinnagantm1891", title: "Zásobník do Mosin Nagan M1891", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.colt1911", title: "Zásobník do Colt 1911", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
-    { productId: "ammo.krissvector", title: "Zásobník do Kriss Vector", category:"ammo", price:"xxx", image:"", show:"yes", stock:""},
+    { productId: "ammo.hk416d", title: "Zásobník do HK416D", category:"ammo", price:"10 NC", image:"ammo/hk416d.jpg", show:"yes", stock:"yes"},
+    { productId: "ammo.glock17", title: "Zásobník do Glock 17", category:"ammo", price:"4.5 NC", image:"ammo/glock17.jpg", show:"yes", stock:""},
+    { productId: "ammo.ak47", title: "Zásobník do AK47", category:"ammo", price:"10 NC", image:"ammo/ak47.jpg", show:"yes", stock:""},
+    { productId: "ammo.remington870ae", title: "Zásobník do Remington 870AE", category:"ammo", price:"10 NC", image:"ammo/remington870ae.jpg", show:"yes", stock:""},
+    { productId: "ammo.kacpdw", title: "Zásobník do KacPDW", category:"ammo", price:"9 NC", image:"ammo/kacpdw.jpg", show:"yes", stock:""},
+    { productId: "ammo.remingtonm700", title: "Zásobník do Remington M700", category:"ammo", price:"12.5 NC", image:"ammo/remingtonm700.jpg", show:"yes", stock:""},
+    { productId: "ammo.mosinnagantm1891", title: "Zásobník do Mosin Nagan M1891", category:"ammo", price:"10 NC", image:"ammo/mosinnagan.jpg", show:"yes", stock:""},
+    { productId: "ammo.colt1911", title: "Zásobník do Colt 1911", category:"ammo", price:"4.5 NC", image:"ammo/colt1911.jpg", show:"yes", stock:""},
+    { productId: "ammo.krissvector", title: "Zásobník do Kriss Vector", category:"ammo", price:"10 NC", image:"ammo/krissvector.jpg", show:"yes", stock:""},
     { productId: "", title: "", category:"", price:"", image:"", show:"", stock:""},
     { productId: "", title: "", category:"", price:"", image:"", show:"", stock:""},
     { productId: "", title: "", category:"", price:"", image:"", show:"", stock:""},
@@ -154,6 +154,7 @@ function openCompleteForm() {
 
 
 function submitForm() {
+    const nick = document.getElementById('nick').value;
     const number = document.getElementById('number').value;
     const email = document.getElementById('email').value;
     const delivery = document.getElementById('delivery').value;
@@ -170,24 +171,37 @@ function submitForm() {
         notification.style.display = 'none';
     }, 17500);
 
+    document.getElementById('nick').value = '';
     document.getElementById('number').value = '';
     document.getElementById('email').value = '';
     document.getElementById('delivery').value = '';
     document.getElementById('complete-form').style.display = 'none';
+    
 
-    const cartMessage = `**LemonGate nick:** ${nick} \n**Anonmail:** ${email}\n**Number:** ${number}\n**Delivery Option:** ${delivery}\n**Order Number:** ${orderNumber}\n\n**Cart Items:**\n${getCartProducts()}`;
+    const cartMessage = `**LemonGate nick:** ${nick} \n**Anonmail:** ${email}\n**Number:** ${number}\n**Delivery Option:** ${delivery}\n**Order Number:** ${orderNumber}\n\n**Cart Items:**\n${getFormattedCartProducts()}`;
 
     const embed = {
         title: 'New Purchase',
         color: 0x3498db, // Barva Embedu - posílán jakožto zpráva
         description: cartMessage,
+    
         timestamp: new Date(),
         footer: {
             text: 'Powered by LemonGate🍋',
         },
+    
+        
     };
 
-    document.getElementById("number").value = ""
+    function getFormattedCartProducts() {
+        const cartProducts = getCartProducts().split(','); 
+        return cartProducts.map(product => `• ${product.trim()}`).join('\n'); 
+    }
+
+
+
+    document.getElementById('nick').value = "";
+    document.getElementById("number").value = "";
     document.getElementById('email').value = "";
     document.getElementById('delivery').value = "";
     document.getElementById('complete-form').style.display = 'none';
@@ -198,6 +212,7 @@ function submitForm() {
 
     const webhookUrl = 'https://discord.com/api/webhooks/1205267570337386496/DKoqVvAlK1wrm4YdJiVuYp8X1_YxZcy1VyGm_eLMwF9hBqoH_GM28-w6k8s8S6-EyoRK';
 
+    
     // DISCORD WEEBHOOK
     fetch(webhookUrl, {
         method: 'POST',
@@ -251,7 +266,7 @@ function updateCart() {
         total += parseInt(item.price.replace(/\D/g, ''), 10);
     });
 
-    cartTotalElement.textContent = `${total} Kč`;
+    cartTotalElement.textContent = `${total} NC`;
 }
 
 function toggleCart() {

@@ -1,17 +1,17 @@
 // celá stránka je napsaná přes uživatele "davis2115"
 // PRODUKTY !!!
 const products = [
-    { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '55 NC',  image: 'guns/hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
-    { productId: "glock17", title: 'Glock-17', category: 'weapons', price: '22 NC',  image: 'guns/glock.png', status: 'Bestseller', show:"yes", },
+    { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '55 NC',  image: 'guns/Hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
+    { productId: "glock17", title: 'Glock-17', category: 'weapons', price: '22 NC',  image: 'guns/Glock.png', status: 'Bestseller', show:"yes", },
     { productId: "ak47",title: 'AK47', category: 'weapons', price: '55 NC', image: 'guns/ak47.png', status: 'Bestseller',show:"yes" },
     { productId: "vrazda",title: 'Vražda', category: 'services', price: 'XXX',  image: 'image7.jpg', status: 'Bestseller',show:"no" },
     { productId: "unos",title: 'Únos', category: 'services', price: 'XXX',  image: 'services/unos.jpg',show:"no" },
-    { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '45 NC', image: 'guns/mosin.png',show:"yes"  },
+    { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '45 NC', image: 'guns/Mosin.png',show:"yes"  },
     { productId: "kacpdw",title: 'KAC PDW', category: 'weapons', price: '50 NC',  image: 'guns/Hekler.png',show:"yes",},
     { productId: "krissvector",title: 'KRISS Vector', category: 'weapons', price: '40NC', image: 'guns/Smg.png',show:"yes"  },
     { productId: "mosinnagantm1891",title: 'Mosin Nagant M1891', category: 'weapons', price: '50 NC',  image: 'guns/Sniper.png',show:"yes"  },
     { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '125 NC', image: 'guns/Sniper.png',show:"yes"  },
-    { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '22.5 NC',  image: 'guns/glock.png' ,show:"yes" },
+    { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '22.5 NC',  image: 'guns/Glock.png' ,show:"yes" },
     { productId: "kokain",title: 'Kokain', category: 'drugs', price: 'XXX',  image: 'drugs/kokain.jpg',show:"yes",stock:"outofstock"  },
     { productId: "pcp",title: 'PCP', category: 'drugs', price: 'XXX',  image: 'drugs/pcp.jpg',show:"yes",stock:"outofstock"  },
     { productId: "xanax",title: 'Xanax', category: 'drugs', price: 'XXX',  image: 'drugs/xanax.jpg',show:"yes",stock:"outofstock"  },

@@ -3,7 +3,7 @@
 const products = [
     { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '55 NC',  image: 'guns/Hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
     { productId: "glock17", title: 'Glock-17', category: 'weapons', price: '22 NC',  image: 'guns/Glock.png', status: 'Bestseller', show:"yes", },
-    { productId: "ak47",title: 'AK47', category: 'weapons', price: '55 NC', image: 'guns/ak47.png', status: 'Bestseller',show:"yes" },
+    { productId: "ak47",title: 'AK47', category: 'weapons', price: '55 NC', image: 'guns/AK47.png', status: 'Bestseller',show:"yes" },
     { productId: "vrazda",title: 'Vražda', category: 'services', price: 'XXX',  image: 'image7.jpg', status: 'Bestseller',show:"no" },
     { productId: "unos",title: 'Únos', category: 'services', price: 'XXX',  image: 'services/unos.jpg',show:"no" },
     { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '45 NC', image: 'guns/Mosin.png',show:"yes"  },

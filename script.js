@@ -1,40 +1,47 @@
 // celá stránka je napsaná přes uživatele "davis2115"
 // PRODUKTY !!!
 const products = [
-    { productId:"hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '55 NC',  image: 'guns/Hekler.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
+    { productId: "hk416d", title: 'Heckler a Koch HK416 D', category: 'weapons', price: '55 NC',  image: 'guns/hk416d.png', status: 'Bestseller', shortcut: "hk", show:"yes"},
     { productId: "glock17", title: 'Glock-17', category: 'weapons', price: '22 NC',  image: 'guns/Glock.png', status: 'Bestseller', show:"yes", },
     { productId: "ak47",title: 'AK47', category: 'weapons', price: '55 NC', image: 'guns/AK47.png', status: 'Bestseller',show:"yes" },
-    { productId: "vrazda",title: 'Vražda', category: 'services', price: 'XXX',  image: 'image7.jpg', status: 'Bestseller',show:"no" },
-    { productId: "unos",title: 'Únos', category: 'services', price: 'XXX',  image: 'services/unos.jpg',show:"no" },
-    { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '45 NC', image: 'guns/Mosin.png',show:"yes"  },
-    { productId: "kacpdw",title: 'KAC PDW', category: 'weapons', price: '50 NC',  image: 'guns/Hekler.png',show:"yes",},
-    { productId: "krissvector",title: 'KRISS Vector', category: 'weapons', price: '40NC', image: 'guns/Smg.png',show:"yes"  },
-    { productId: "mosinnagantm1891",title: 'Mosin Nagant M1891', category: 'weapons', price: '50 NC',  image: 'guns/Sniper.png',show:"yes"  },
-    { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '125 NC', image: 'guns/Sniper.png',show:"yes"  },
-    { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '22.5 NC',  image: 'guns/Glock.png' ,show:"yes" },
-    { productId: "kokain",title: 'Kokain', category: 'drugs', price: 'XXX',  image: 'drugs/kokain.jpg',show:"yes",stock:"outofstock"  },
-    { productId: "pcp",title: 'PCP', category: 'drugs', price: 'XXX',  image: 'drugs/pcp.jpg',show:"yes",stock:"outofstock"  },
-    { productId: "xanax",title: 'Xanax', category: 'drugs', price: 'XXX',  image: 'drugs/xanax.jpg',show:"yes",stock:"outofstock"  },
-    { productId: "morfium",title: 'Morfium', category: 'drugs', price: 'XXX',  image: 'drugs/morfium.jpg',show:"yes",stock:"outofstock"  },
-    { productId: "houbicky",title: 'Houbičky', category: 'drugs', price: 'XXX',  image: 'drugs/houbicky.jpg',show:"yes",stock:"outofstock"  },
-    { productId: "marihuana",title: 'Marihuana', category: 'drugs', price: 'XXX',  image: 'drugs/Marihuana.jpg',show:"yes",stock:"outofstock" },
-    { productId:"metamfetamin",title:"Metamfetamin",category:"drugs",price:"xxx",image:"drugs/metamfetamin.jpg",show:"yes",stock:"outofstock"},
-    { productId:"epinefrin",title:"Epinefrin",category:"drugs",price:"xxx",image:"drugs/epinefrin.jpg",show:"yes",stock:"outofstock"},
-    { productId:"extaze",title:"Extáze",category:"drugs",price:"xxx",image:"drugs/extaze.jpg",show:"yes",stock:"outofstock"},
-    { productId:"heroin",title:"Heroin",category:"drugs",price:"xxx",image:"drugs/heroin.jpg",show:"yes",stock:"outofstock"},
+    { productId: "remington870ae",title: 'Remington 870AE', category: 'weapons', price: '45 NC', image: 'guns/remington870ae.png',show:"yes"  },
+    { productId: "kacpdw",title: 'KAC PDW', category: 'weapons', price: '50 NC',  image: 'guns/kacpdw.png',show:"yes",},
+    { productId: "krissvector",title: 'KRISS Vector', category: 'weapons', price: '40NC', image: 'guns/krissvector.png',show:"yes"  },
+    { productId: "mp7",title: '	Heckler a Koch MP7', category: 'weapons', price: '40NC', image: 'guns/uzi.png',show:"yes"  },
+    { productId: "mosinnagantm1891",title: 'Mosin Nagant M1891', category: 'weapons', price: '50 NC',  image: 'guns/mosinnagantm1891.png',show:"yes"  },
+    { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '125 NC', image: 'guns/remingtonm700.png',show:"yes"  },
+    { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '22.5 NC',  image: 'guns/Colt.png' ,show:"yes" },
+    { productId: "unos",title: 'Únos', category: 'services', price: '0 NC',  image: 'services/unos.jpg',show:"yes", individualni:"true" ,stock:"outofstock"},
+    { productId: "vrazda",title: 'Vražda', category: 'services', price: '0 NC',  image: 'services/vrazda.jpg',show:"yes",individualni:"true",stock:"outofstock" },
+    { productId: "banka",title: 'Pytle z Banky', category: 'services', price: '30 NC',  image: 'services/banka.png',show:"yes",stock:"outofstock" },
+    { productId: "kokain",title: 'Kokain', category: 'drugs', price: '1 NC',  image: 'drugs/kokain.png',show:"yes",stock:"outofstock"  },
+    { productId: "xanax",title: 'Xanax', category: 'drugs', price: '2.5 NC',  image: 'drugs/xanax.png',show:"yes",stock:"outofstock"  },
+    { productId: "morfium",title: 'Morfium', category: 'drugs', price: '0.9 NC',  image: 'drugs/morfium.png',show:"yes",stock:"outofstock"  },
+    { productId: "houbicky",title: 'Houbičky', category: 'drugs', price: '0.9 NC',  image: 'drugs/houbicky.png',show:"yes",stock:"outofstock"  },
+    { productId: "marihuana",title: 'Marihuana', category: 'drugs', price: '0.3 NC',  image: 'drugs/marihuana.png',show:"yes",stock:"outofstock" },
+    { productId: "metamfetamin",title:"Metamfetamin",category:"drugs",price:"0.7 NC",image:"drugs/kokain.png",show:"yes",stock:"outofstock"},
+    { productId: "epinefrin",title:"Epinefrin",category:"drugs",price:"1 NC",image:"drugs/epinefrin.png",show:"yes",stock:"outofstock"},
+    { productId: "extaze",title:"Extáze",category:"drugs",price:"0.7 NC",image:"drugs/extaze.png",show:"yes",stock:"outofstock"},
+    { productId: "heroin",title:"Heroin",category:"drugs",price:"0.7 NC",image:"drugs/heroin.png",show:"yes",stock:"outofstock"},
+    { productId: "pcp",title: 'PCP', category: 'drugs', price: '0.7 NC',  image: 'drugs/pcp.png',show:"yes",stock:"outofstock"  },
     { productId: "services",title: 'SERVICES', category: 'services', price: '$100',  image: 'image7.jpg',show:"no",stock:"outofstock" },
     { productId: "services",title: 'SERVICES', category: 'services', price: '$120', image: 'image8.jpg',show:"no",stock:"outofstock" },
     { productId: "services",title: 'SERVICES', category: 'services', price: '$90', image: 'image9.jpg',show:"no",stock:"outofstock" },
-    { productId: "rp",title: 'NEDOSTUPNÉ', category: 'documents', price: '$0', image: 'image9.jpg',show:"no" },
-    { productId: "ammo.hk416d", title: "Zásobník do HK416D", category:"ammo", price:"10 NC", image:"ammo/hk416d.jpg", show:"yes", stock:"yes"},
-    { productId: "ammo.glock17", title: "Zásobník do Glock 17", category:"ammo", price:"4.5 NC", image:"ammo/glock17.jpg", show:"yes", stock:""},
-    { productId: "ammo.ak47", title: "Zásobník do AK47", category:"ammo", price:"10 NC", image:"ammo/ak47.jpg", show:"yes", stock:""},
-    { productId: "ammo.remington870ae", title: "Zásobník do Remington 870AE", category:"ammo", price:"10 NC", image:"ammo/remington870ae.jpg", show:"yes", stock:""},
-    { productId: "ammo.kacpdw", title: "Zásobník do KacPDW", category:"ammo", price:"9 NC", image:"ammo/kacpdw.jpg", show:"yes", stock:""},
-    { productId: "ammo.remingtonm700", title: "Zásobník do Remington M700", category:"ammo", price:"12.5 NC", image:"ammo/remingtonm700.jpg", show:"yes", stock:""},
-    { productId: "ammo.mosinnagantm1891", title: "Zásobník do Mosin Nagan M1891", category:"ammo", price:"10 NC", image:"ammo/mosinnagan.jpg", show:"yes", stock:""},
-    { productId: "ammo.colt1911", title: "Zásobník do Colt 1911", category:"ammo", price:"4.5 NC", image:"ammo/colt1911.jpg", show:"yes", stock:""},
-    { productId: "ammo.krissvector", title: "Zásobník do Kriss Vector", category:"ammo", price:"10 NC", image:"ammo/krissvector.jpg", show:"yes", stock:""},
+    { productId: "psaodznak", title: "PSA odznak", category:"documents", price:"75 NC", image:"documents/psaodznak.png", show:"yes", stock:"outofstock"},
+    { productId: "artodznak", title: "ART odznak", category:"documents", price:"100 NC", image:"documents/artodznak.png", show:"yes", stock:"outofstock"},
+    { productId: "hzsodznak", title: "HZS odznak", category:"documents", price:"50 NC", image:"documents/hzsodznak.png", show:"yes", stock:"outofstock"},
+    { productId: "zzslegitimace", title: "ZZS legitimace", category:"documents", price:"45 NC", image:"documents/zzslegitimace.png", show:"yes", stock:"outofstock"},
+    { productId: "docarlegitimace", title: "DOCAR legitimace", category:"documents", price:"45 NC", image:"documents/docarlegitimace.png", show:"yes", stock:"outofstock"},
+    { productId: "ammo.hk416d", title: "Zásobník do HK416D", category:"ammo", price:"10 NC", image:"ammo/hk416d.png", show:"yes", stock:"yes"},
+    { productId: "ammo.glock17", title: "Zásobník do Glock 17", category:"ammo", price:"4.5 NC", image:"ammo/glock17.png", show:"yes", stock:""},
+    { productId: "ammo.ak47", title: "Zásobník do AK47", category:"ammo", price:"10 NC", image:"ammo/ak47.png", show:"yes", stock:""},
+    { productId: "ammo.remington870ae", title: "Zásobník do Remington 870AE", category:"ammo", price:"10 NC", image:"ammo/remington870ae.png", show:"yes", stock:""},
+    { productId: "ammo.kacpdw", title: "Zásobník do KacPDW", category:"ammo", price:"9 NC", image:"ammo/kacpdw.png", show:"yes", stock:""},
+    { productId: "ammo.remingtonm700", title: "Zásobník do Remington M700", category:"ammo", price:"12.5 NC", image:"ammo/remingtonm700.png", show:"yes", stock:""},
+    { productId: "ammo.mosinnagantm1891", title: "Zásobník do Mosin Nagan M1891", category:"ammo", price:"10 NC", image:"ammo/mosinnagan.png", show:"yes", stock:""},
+    { productId: "ammo.colt1911", title: "Zásobník do Colt 1911", category:"ammo", price:"4.5 NC", image:"ammo/colt1911.png", show:"yes", stock:""},
+    { productId: "ammo.krissvector", title: "Zásobník do Kriss Vector", category:"ammo", price:"10 NC", image:"ammo/krissvector.png", show:"yes", stock:""},
+    { productId: "ammo.uzi", title: "Zásobník do Heckler a Koch MP7", category:"ammo", price:"10 NC", image:"ammo/uzi.png", show:"yes", stock:""},
     { productId: "", title: "", category:"", price:"", image:"", show:"", stock:""},
     { productId: "", title: "", category:"", price:"", image:"", show:"", stock:""},
     { productId: "", title: "", category:"", price:"", image:"", show:"", stock:""},
@@ -87,8 +94,17 @@ function addAddToCartButton(product, productIndex) {
         outofstockLabel.classList.add('outofstock-label');
         outofstockLabel.textContent = 'Nedostupné';
         productDiv.appendChild(outofstockLabel);
-
     }
+    
+    if (product.individualni=== 'true') {
+        productDiv.style.borderColor = 'orange';
+    
+        const individualniLabel = document.createElement('div');
+        individualniLabel.classList.add('individualni-label');
+        individualniLabel.textContent = 'Individuální';
+        productDiv.appendChild(individualniLabel); 
+    }
+    
     function zvetsitProdukt(element) {
         element.classList.add('zvetseno');
     }
@@ -121,8 +137,7 @@ function addAddToCartButton(product, productIndex) {
     addToCartButton.dataset.productId = product.productId; // Add product ID to the button
     addToCartButton.onclick = function () {
         if (product.stock === 'outofstock') {
-            // Productid = přidat do košíku oný produkt
-            alert('This product is currently out of stock.');
+
         } else {
             addToCart(product.productId);
         }

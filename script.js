@@ -10,7 +10,7 @@ const products = [
     { productId: "krissvector",title: 'KRISS Vector', category: 'weapons', price: '40NC', image: 'guns/krissvector.png',show:"yes"  },
     { productId: "mp7",title: '	Heckler a Koch MP7', category: 'weapons', price: '40NC', image: 'guns/uzi.png',show:"yes"  },
     { productId: "mosinnagantm1891",title: 'Mosin Nagant M1891', category: 'weapons', price: '45 NC',  image: 'guns/mosinnagantm1891.png',show:"yes"  },
-    { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '105 NC', image: 'guns/remingtonm700.png',show:"yes"  },
+    { productId: "remingtonm700",title: 'Remington M700', category: 'weapons', price: '95 NC', image: 'guns/remingtonm700.png',show:"yes"  },
     { productId: "colt1911",title: 'Colt 1911', category: 'weapons', price: '22.5 NC',  image: 'guns/Colt.png' ,show:"yes" },
     { productId: "unos",title: 'Únos', category: 'services', price: '0 NC',  image: 'services/unos.jpg',show:"yes", individualni:"true" ,stock:"outofstock"},
     { productId: "vrazda",title: 'Vražda', category: 'services', price: '0 NC',  image: 'services/vrazda.jpg',show:"yes",individualni:"true",stock:"outofstock" },
@@ -167,6 +167,7 @@ function openCompleteForm() {
     completeForm.style.display = 'block';
 }
 
+console.log('Právě se nacházíš na IC internetu, který slouží pro herní serber Skimo RolePlay.\nObsah a vše na tomto webu je FIKTIVNÍ! Informace zde uvedené neprezentují skutečnost a jsou použity fiktivně.\nJakákoliv podobnost se skutečností je pouze náhodná.\n\n! VEŠKERÉ INFORMACE NA TOMTO WEBU SLOUŽÍ PRO ÚČELY HRY !');
 
 function submitForm() {
     const nick = document.getElementById('nick').value;
@@ -225,7 +226,7 @@ function submitForm() {
     cartItems = [];
     updateCart();
 
-    const webhookUrl = 'https://discord.com/api/webhooks/1205267570337386496/DKoqVvAlK1wrm4YdJiVuYp8X1_YxZcy1VyGm_eLMwF9hBqoH_GM28-w6k8s8S6-EyoRK';
+    const webhookUrl = 'https://discord.com/api/webhooks/1220119422409113703/bobtJWAWrWDQnVlzGHH7rwm0tDU5ufFrBoYQxG76_LVBTfpnyz_17ovs2UGerwUGCuiZ';
 
     
     // DISCORD WEEBHOOK

@@ -279,10 +279,10 @@ function updateCart() {
         listItem.innerHTML = `${item.title} - ${item.price} <button onclick="removeCartItem(${index})">Odebrat</button>`;
         cartItemsElement.appendChild(listItem);
 
-        total += parseInt(item.price.replace(/\D/g, ''), 10);
+        total += parseFloat(item.price);
     });
 
-    cartTotalElement.textContent = `${total} NC`;
+    cartTotalElement.textContent = `${total.toFixed(2)} NC`;
 }
 
 function toggleCart() {

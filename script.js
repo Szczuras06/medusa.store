@@ -262,9 +262,13 @@ function addToCart(productId) {
     updateCart();
 }
 
-function removeCartItem(index) {
-    cartItems.splice(index, 1);
-    updateCart();
+function removeCartItem(productId) {
+    
+    const index = cartItems.findIndex(item => item.productId === productId);
+    if (index !== -1) {
+        cartItems.splice(index, 1);
+        updateCart();
+    }
 }
 
 function updateCart() {
@@ -274,16 +278,30 @@ function updateCart() {
     cartItemsElement.innerHTML = '';
 
     let total = 0;
-    cartItems.forEach((item, index) => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `${item.title} - ${item.price} <button onclick="removeCartItem(${index})">Odebrat</button>`;
-        cartItemsElement.appendChild(listItem);
+    const productCounts = {};
 
-        total += parseFloat(item.price);
+    cartItems.forEach(item => {
+        if (productCounts[item.productId]) {
+            productCounts[item.productId]++;
+        } else {
+            productCounts[item.productId] = 1;
+        }
     });
+
+    for (const productId in productCounts) {
+        if (productCounts.hasOwnProperty(productId)) {
+            const count = productCounts[productId];
+            const product = products.find(p => p.productId === productId);
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `${product.title} - ${product.price} x ${count} <button onclick="removeCartItem('${productId}')">Odebrat</button>`;
+            cartItemsElement.appendChild(listItem);
+            total += parseFloat(product.price) * count;
+        }
+    }
 
     cartTotalElement.textContent = `${total.toFixed(2)} NC`;
 }
+
 
 function toggleCart() {
     const cart = document.querySelector('.cart');
